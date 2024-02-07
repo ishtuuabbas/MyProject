@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>faq</title>
+    <style>
+        body{
+            background-color: beige;
+            padding: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6rem;
+        }
+        .accor{
+            background-color: #fff;
+            padding: 4px 16px;
+            border-radius: 4px;
+            box-shadow: 12px 10px 16px hsl(300, 89%, 83%);
+            margin-bottom: 16px;
+        }
+        .qq{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+           
+        }
+        .icon{
+            margin-right: 16px;
+            transition: trasform 0.2s;
+        }
+        .icon:active{
+            transform: rotate(-180deg);
+        }
+        .ans{
+            color: #666;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0;
+        }
+        .ans.active{
+            max-height: fit-content;
+        }
+    </style>
+</head>
+<body>
+    <h2>faq</h2>
+    <div class="accor">
+        <div class="qq">
+            <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque libero provident tempore a, ipsa id, neque, quae unde expedita voluptatum magnam maiores animi inventore vel. Quidem sunt error reiciendis praesentium?</h4>
+            <img class="icon" src="images/facebook.png" alt="" width="20px" height="20px">
+        </div>
+        <div class="ans">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id tempora aliquid necessitatibus dolor, sunt unde suscipit magni sequi eum incidunt natus eius exercitationem non sit officia numquam nemo animi magnam!</p>
+        </div>
+    </div>
+    <div class="accor">
+        <div class="qq">
+            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error corrupti beatae eos minima vero. Voluptate, eum? Accusantium, assumenda eveniet? Eligendi tempora dicta perferendis animi corrupti ex excepturi nesciunt natus consequatur!</h4>
+            <img class="icon" src="images/facebook.png" alt="" width="20px" height="20px">
+        </div>
+        <div class="ans">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id tempora aliquid necessitatibus dolor, sunt unde suscipit magni sequi eum incidunt natus eius exercitationem non sit officia numquam nemo animi magnam!</p>
+        </div>
+    </div>
+    <div class="accor">
+        <div class="qq">
+            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eos, eaque corporis fugiat accusamus laboriosam architecto similique, iste eius voluptatum explicabo eveniet quam odio ad ducimus nostrum. Et, repellendus facilis?</h4>
+            <img class="icon" src="images/facebook.png" alt="" width="20px" height="20px">
+        </div>
+        <div class="ans">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id tempora aliquid necessitatibus dolor, sunt unde suscipit magni sequi eum incidunt natus eius exercitationem non sit officia numquam nemo animi magnam!</p>
+        </div>
+    </div>
+    <div class="accor">
+        <div class="qq">
+            <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, unde fuga voluptatibus ut veniam, quae deleniti, quisquam ab animi maiores ipsa reprehenderit explicabo quia. Delectus quam eos quod nesciunt veniam.</h4>
+            <img class="icon" src="images/facebook.png" alt="" width="20px" height="20px">
+        </div>
+        <div class="ans">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id tempora aliquid necessitatibus dolor, sunt unde suscipit magni sequi eum incidunt natus eius exercitationem non sit officia numquam nemo animi magnam!</p>
+        </div>
+    </div>
+    <div class="accor">
+        <div class="qq">
+            <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, eius at labore dolorum, minima totam repellendus similique quidem, officiis cupiditate iste ipsa fugit vero? Accusantium optio officiis ipsum voluptate excepturi?</h4>
+            <img class="icon" src="images/facebook.png" alt="" width="20px" height="20px">
+        </div>
+        <div class="ans">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id tempora aliquid necessitatibus dolor, sunt unde suscipit magni sequi eum incidunt natus eius exercitationem non sit officia numquam nemo animi magnam!</p>
+        </div>
+    </div>
+
+
+    <script>
+        const accor = document.querySelectorAll('.accor');
+
+
+
+        for(let i=0;i<accor.length;i++){
+const answer = accor[i].querySelector('.ans');
+
+accor[i].addEventListener("click",function(){
+    answer.classList.toggle("active");
+})
+        }
+
+        
+        /*
+        accor.forEach(accor=>{
+            const icon =accor.querySelector('.icon');
+            const answer =accor.querySelector('.ans');
+            accor.addEventListener('click',()=>{
+                icon.classList.toggle('active');
+                answer.classList.toggle('active');
+            })
+        })
+        */
+    </script>
+</body>
+</html>
