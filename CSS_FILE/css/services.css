@@ -1,0 +1,64 @@
+
+    .home-service {
+        background-color: #f1f1f1;
+        padding: 50px;
+        text-align: center;
+    }
+
+    .home-service h2 {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+
+    .home-service p {
+        font-size: 18px;
+        line-height: 1.5;
+        margin-bottom: 30px;
+    }
+
+    .home-service button {
+        background-color: #be0e0e;
+        color: #fff;
+        padding: 10px 30px;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+        cursor: pointer;
+        margin: 20px;
+    }
+    .home-service button:hover {
+
+        background-color:#940905;
+    }
+
+    .service-category {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .service-category .card {
+        background-color: #fff;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        max-width: 300px;
+        margin: 20px;
+        text-align: center;
+        font-size: 18px;
+        padding: 20px;
+    }
+
+    .service-category .card img {
+        max-width: 200px;
+        max-height: 200px;
+        margin-bottom: 20px;
+    }
+
+    .service-category .card h3 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .service-category .card p {
+        line-height: 1.5;
+    }
