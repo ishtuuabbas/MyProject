@@ -1,0 +1,70 @@
+<html>
+   <head>   
+      <script type = "text/javascript">
+         <!--
+            function successful() {
+                document.write("your form is successfully done")
+              
+            }
+         //-->
+      </script>      
+   </head>
+   
+   <body>   
+      <form method = "POST" action = "t.cgi" onsubmit = "successful()">
+        <h2>Registration form</h2>
+         <label for="name">Name:</label>
+         <input type="text" id="name" name="name"><br><br>
+         
+         <label for="email">Email:</label>
+         <input type="email" id="email" name="email"><br><br>
+         
+         <label for="password">Password:</label>
+         <input type="password" id="password" name="password"><br><br>
+         
+         <label for="age">Age:</label>
+         <input type="number" id="age" name="age"><br><br>
+         
+         Gender:<label>
+             <input type="radio" name="gender" value="male">
+             Male
+         </label>
+         <label>
+             <input type="radio" name="gender" value="female">
+             Female
+         </label>
+         <label>
+             <input type="radio" name="gender" value="other">
+             Other
+         </label>
+         <br><br>
+         Interest:<br>
+         <input type="checkbox" id="sport" name="interest" value="sport">
+         <label for="sport">Sport</label><br>
+       
+         <input type="checkbox" id="music" name="interest" value="music">
+         <label for="music">Music</label><br>
+       
+         <input type="checkbox" id="art" name="interest" value="art">
+         <label for="art">Art</label><br>
+       
+         <input type="checkbox" id="read" name="interest" value="read">
+         <label for="read">Read</label><br>
+        <br><br>
+        <label for="colors">Select a color:</label>
+        <select id="colors" name="colors">
+          <option value="red">Red</option>
+          <option value="green">Green</option>
+          <option value="blue">Blue</option>
+          <option value="yellow">Yellow</option>
+          <option value="purple">Purple</option>
+        </select>
+        <br><br>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <br><br>
+         
+         <input type = "submit" value = "Submit" />
+      </form>      
+   </body>
+</html>
