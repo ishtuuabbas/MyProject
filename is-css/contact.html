@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Contact us page</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+        
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="header.css">
+    <link rel="stylesheet" type="text/css" href="services.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+
+<body>
+    <!--header section-->
+    <header>
+        <nav>
+            <a1 href="#" class="logo"><img src="image/logo.png" alt="Logo"></a1>
+           
+            <ul>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="service.html">Services</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="#">Contact</a></li>
+              <li class="login"><a href="login.html">Log In</a></li>
+              <li class="Signin"><a href="signup.html">Sign up</a></li>
+            </ul>
+          </nav>
+    </header>
+        <div class="line-div">
+            <div class="center-line-brown"></div>
+        </div>
+
+    <div class="background-clr ">
+        <div class="contact-us ">
+            <div class="contact-width contact-us-text">
+                <h3 class="text margin-padding">Contact Us</h3>
+                <p class="contact-icons">Lorem ipsum dolor sit amet Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Nemo, nobis.</p>
+                <div class="contact-icons">
+                    <img src="icons/address.png" alt="address">
+                    <span>Address</span>
+                    <h5>Khargrong multipurpose youth engagement hub Imam Bargah Khargrong skardu</h5>
+                </div>
+                <div class="contact-icons">
+                    <img src="icons/mail.png" alt="mail">
+                    <span>Mail</span>
+                    <h5>abc@gmail.com</h5>
+                </div>
+                <div class="contact-icons">
+                    <img src="icons/phone.png" alt="mail">
+                    <span>Phone</span>
+                    <h5>+92 348 5504200</h5>
+                </div>
+                <div class="contact-icons">
+                    <img src="icons/website.png" alt="mail">
+                    <span>Website</span>
+                    <h5>Urban Technology</h5>
+                </div>
+            </div>
+            <div class="contact-width">
+                <form action="#" method="post" id="validation-form">
+                    <h2 class="text">Get in touch with us</h2>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="name">
+                    <div class="error-message" id="name-error">Name is required.</div>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="email">
+                    <div class="error-message" id="email-error">Please enter a valid email address.</div>
+
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="name" name="subject" placeholder="subject">
+                    <div class="error-message" id="name-error">Name is required.</div>
+
+                    <label for="message">Message:</label>
+                    <textarea id="outline" name="message" rows="10" cols="30" placeholder="messsage"></textarea>
+                    <div></div>
+                    <input type="submit" value="send message">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer section-->
+    <footer>
+        <div class="is-footer-main-div">
+            <div class="is-footer1">
+                <img src="image/logo.png" alt="logo image">
+                <div class="sub2-sec1">
+                  <pre>
+                     <q>
+                       Education is the passport to the future,
+                        for tomorrow belongs to those who prepare 
+                        for it today.
+                       </q>
+                      </pre>
+              </div>
+            </div>
+            <div class="is-footer2">
+                
+                <div class="sub2-sec2">
+                    <h6 class="footer-text-uppercase">Services</h6>
+                    <ul class="list-style-none">
+                        <li>
+                            <p class="is">Online Classes</p>
+                        </li>
+                        <li>
+                            <p class="is">Videos </p>
+                        </li>
+                        <li>
+                            <p class="is">Tutorials</p>
+                        </li>
+                        <li>
+                            <p class="is">Quizzes</p>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="sub2-sec3">
+                    <h6 class="footer-text-uppercase">About</h6>
+                    <ul class="list-style-none">
+                        <li>
+                            <p class="is">Careers Counseling</p>
+                        </li>
+                        <li>
+                            <p class="is">Our Story</p>
+                        </li>
+                        <li>
+                            <p class="is">Benefits</p>
+                        </li>
+                        <li>
+                            <p class="is">Teams</p>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="sub2-sec4">
+                    <h6 class="footer-text-uppercase">legal</h6>
+                    <ul class="list-style-none">
+                        <li>
+                            <p class="is" >Terms and Conditions</p>
+                        </li>
+                        <li>
+                            <p class="is" >Privacy Policy</p>
+                        </li>
+                        <li>
+                            <p class="is" >Terms of use</p>
+                        </li>
+                        <li>
+                            <p class="is" >Rules Regulation</p>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+          </div>
+            <hr>
+            <marquee>
+                <p id="copy-right"> <b> &copy; 2024, Urban Technology ,Skd </b></p>
+            </marquee>
+           
+    </footer>
+    <script src="jquery.js"></script>
+    <script>
+   
+            const form = document.getElementById("validation-form");
+            const nameInput = document.getElementById("name");
+            const emailInput = document.getElementById("email");
+           
+            const nameError = document.getElementById("name-error");
+            const emailError = document.getElementById("email-error");
+           
+
+            form.addEventListener("submit", function (event) {
+                let isValid = true;
+
+                if (nameInput.value.trim() === "") {
+                    nameInput.classList.add("invalid");
+                    nameError.classList.add("visible");
+                    isValid = false;
+                } else {
+                    nameInput.classList.remove("invalid");
+                    nameError.classList.remove("visible");
+                }
+
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailRegex.test(emailInput.value)) {
+                    emailInput.classList.add("invalid");
+                    emailError.classList.add("visible");
+                    isValid = false;
+                } else {
+                    emailInput.classList.remove("invalid");
+                    emailError.classList.remove("visible");
+                }
+
+
+                if (!isValid) {
+                    event.preventDefault();
+                }
+            });
+
+            const inputs = [nameInput, emailInput, passwordInput, confirmPasswordInput];
+            inputs.forEach(input => {
+                input.addEventListener("focus", function () {
+                    this.classList.remove("invalid");
+                });
+            });
+       
+    </script>
+
+</body>
+
+</html>
